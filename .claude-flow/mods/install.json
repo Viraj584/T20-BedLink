@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "installedAt": "2026-10-02T22:47:58.372Z",
+  "files": {
+    "C:\\Users\\Nishad Ghate\\T20-BedLink\\.claude\\settings.json": {
+      "plugins": [
+        "ruflo-mods@ruflo",
+        "ruflo-swarm@ruflo",
+        "ruflo-console@ruflo"
+      ],
+      "marketplace": true,
+      "env": true,
+      "claudeInstalled": []
+    }
+  }
+}

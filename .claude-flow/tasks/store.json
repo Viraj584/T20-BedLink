@@ -1,0 +1,44 @@
+{
+  "tasks": {
+    "task-1790981870973-ijw3bg": {
+      "taskId": "task-1790981870973-ijw3bg",
+      "type": "implementation",
+      "description": "Analyze repomix-output.xml in T20-BedLink, map Flutter lib/ screens, Firebase routes, and save report to APP_EXPLANATION.md",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T22:57:50.973Z",
+      "startedAt": null,
+      "completedAt": null
+    },
+    "task-1790984343545-x1lvsp": {
+      "taskId": "task-1790984343545-x1lvsp",
+      "type": "implementation",
+      "description": "Refactor Nurse UI to high-contrast 1-tap steppers and add relative timestamp badges for data freshness.",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T23:39:03.545Z",
+      "startedAt": null,
+      "completedAt": null
+    },
+    "task-1790984351868-bnahxn": {
+      "taskId": "task-1790984351868-bnahxn",
+      "type": "implementation",
+      "description": "Implement 2-minute countdown timer with auto-fallback routing to the next-best hospital on timeout or rejection.",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T23:39:11.868Z",
+      "startedAt": null,
+      "completedAt": null
+    }
+  },
+  "version": "3.0.0"
+}
