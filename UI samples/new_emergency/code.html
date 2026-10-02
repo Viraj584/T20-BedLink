@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary": "#ffffff", "tertiary-container": "#627375", "on-surface": "#0a1e23", "surface-container-high": "#d6ecf3", "error-container": "#ffdad6", "secondary-fixed-dim": "#93d0dd", "on-error-container": "#93000a", "secondary-container": "#afedfa", "primary-container": "#0e7c86", "on-secondary-fixed": "#001f25", "tertiary-fixed-dim": "#b8cacc", "on-secondary-fixed-variant": "#004e59", "surface-dim": "#c8dee4", "tertiary": "#4a5a5c", "on-background": "#0a1e23", "primary-fixed": "#98f0fb", "on-error": "#ffffff", "primary": "#00626a", "secondary-fixed": "#afedfa", "inverse-primary": "#7cd4df", "secondary": "#266772", "tertiary-fixed": "#d4e6e8", "outline-variant": "#bdc9ca", "background": "#f0fbff", "error": "#ba1a1a", "primary-fixed-dim": "#7cd4df", "surface-container-highest": "#d1e6ed", "on-primary-fixed": "#001f23", "surface": "#f0fbff", "surface-variant": "#d1e6ed", "on-primary-container": "#ddfbff", "surface-container": "#dcf2f8", "on-primary": "#ffffff", "surface-tint": "#006972", "on-primary-fixed-variant": "#004f56", "inverse-on-surface": "#dff4fb", "surface-bright": "#f0fbff", "on-tertiary-fixed-variant": "#394a4b", "on-secondary-container": "#2d6d78", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3e494a", "surface-container-low": "#e2f7fe", "on-tertiary-container": "#e6f8fa", "inverse-surface": "#203339", "outline": "#6e797a", "on-tertiary-fixed": "#0e1e20", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "margin": "1rem", "space-sm": "0.5rem" }, fontFamily: { "display-lg": ["Inter"], "body-md": ["Inter"], "display-md": ["Inter"], "label-lg": ["Inter"], "title-lg": ["Inter"], "headline-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "display-md": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-primary shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex flex-col justify-center"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed text-[20px]">emergency</span><h1 class="text-title-lg font-title-lg text-on-primary tracking-tight leading-tight">Quick Triage</h1></div><p class="text-label-md font-label-md text-primary-fixed-dim leading-none mt-0.5">Medic 42 • North District</p></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container"><span class="w-2 h-2 rounded-full bg-primary-fixed animate-pulse"></span><span class="text-label-md font-label-md text-on-primary-container uppercase tracking-wider text-[11px]">Online</span></div><div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-6">
+<!-- Content Container with strict 16px margins & spacing -->
+<div class="flex flex-col gap-4 px-margin pt-3">
+<!-- Card 1: Patient Location -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h2 class="text-title-lg font-title-lg text-on-surface">Patient location</h2>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-label-md font-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+          Live GPS
+        </span>
+</div>
+<!-- Vector Map Box -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden bg-surface-container-low" data-location="Whitefield Main Road, Bengaluru" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZ3aJHYKMqAXTao68Vswe-Xdy3wdWFpdRjYJk5xPi4w68xdSnfnz80MhlKjR-onOSNtof4wKINPf8KKV0Swnquyvv9iYpAupMzMrCBE_o9nBIIkI02QtYIcEsm-oli7FWaTc35sq8hm54Z3pt4g6Cxqus3-pHvToMaogJiS-gKzSM-sSDfzs6Yk_AnNmE1iz6PRKzjsKcIWfUKkYFBYq4fUB2t241jwd_rPg-V4MxvpkK2fPfB9nduvA')">
+<!-- SVG Vector Map Fallback / Grid Overlay -->
+<svg class="absolute inset-0 w-full h-full opacity-60" fill="none" preserveaspectratio="none" viewbox="0 0 328 160">
+<path d="M-10 40 Q 90 60 180 30 T 340 70" stroke="#c8dee4" stroke-linecap="round" stroke-width="12"></path>
+<path d="M60 -10 L 100 170" stroke="#dcf2f8" stroke-width="8"></path>
+<path d="M220 -10 L 190 170" stroke="#dcf2f8" stroke-width="10"></path>
+<path d="M120 70 Q 200 120 280 110" stroke="#ffffff" stroke-width="6"></path>
+<path d="M-10 130 L 340 100" stroke="#c8dee4" stroke-width="8"></path>
+<!-- Minor street lanes -->
+<line stroke="#ffffff" stroke-dasharray="4 3" stroke-width="3" x1="20" x2="80" y1="20" y2="80"></line>
+<line stroke="#ffffff" stroke-width="3" x1="240" x2="310" y1="20" y2="90"></line>
+<circle cx="80" cy="110" fill="#afedfa" fill-opacity="0.3" r="14"></circle>
+<circle cx="270" cy="50" fill="#afedfa" fill-opacity="0.3" r="20"></circle>
+</svg>
+<!-- Dynamic Beacon / Center Pin -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="relative flex items-center justify-center">
+<span class="absolute w-12 h-12 rounded-full bg-primary-container/20 animate-ping"></span>
+<span class="absolute w-7 h-7 rounded-full bg-primary/30"></span>
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+</div>
+</div>
+<!-- Coordinates pill overlay -->
+<div class="absolute top-2 left-2 px-2 py-1 rounded bg-surface/90 shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">my_location</span>
+<span class="text-label-md font-label-md text-on-surface text-[12px]">12.9698° N, 77.7500° E</span>
+</div>
+</div>
+<!-- Address Row -->
+<div class="flex items-center gap-2 pt-0.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">pin_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="text-title-lg font-title-lg text-on-surface truncate">Detected via GPS · Whitefield Main Rd</p>
+<p class="text-label-md font-label-md text-on-surface-variant truncate text-[12px]">Near Hope Farm Junction • Accuracy ±4m</p>
+</div>
+</div>
+<!-- Action Row (minimum 48dp ergonomics) -->
+<div class="flex items-center justify-between gap-2 pt-1">
+<button class="min-h-[48px] px-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center gap-2 active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_location_alt</span>
+<span class="text-label-md font-label-md">Use map pin instead</span>
+</button>
+<button aria-label="Refresh GPS Location" class="w-12 h-12 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">refresh</span>
+</button>
+</div>
+</section>
+<!-- Card 2: Clinical Requirements -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-2.5">
+<div class="flex items-baseline justify-between">
+<h2 class="text-title-lg font-title-lg text-on-surface">What does the patient need?</h2>
+<span class="text-label-md font-label-md text-on-surface-variant">Select all</span>
+</div>
+<!-- Multi-select Filter Chips (56dp target heights) -->
+<div class="grid grid-cols-2 gap-2.5 pt-1" id="clinical-chips-grid">
+<!-- ICU (Selected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-secondary-container text-on-secondary-container shadow-sm active:scale-98 transition-all" data-chip="icu" data-selected="true" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">local_hospital</span>
+<span class="text-label-lg font-label-lg truncate">ICU Bed</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] font-bold">check_circle</span>
+</button>
+<!-- Ventilator (Selected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-secondary-container text-on-secondary-container shadow-sm active:scale-98 transition-all" data-chip="vent" data-selected="true" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">airwave</span>
+<span class="text-label-lg font-label-lg truncate">Ventilator</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] font-bold">check_circle</span>
+</button>
+<!-- Oxygen (Unselected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-surface-container-low text-on-surface active:scale-98 transition-all" data-chip="o2" data-selected="false" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">mode_fan</span>
+<span class="text-label-lg font-label-lg truncate">Oxygen</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">add_circle</span>
+</button>
+<!-- Cardiac (Unselected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-surface-container-low text-on-surface active:scale-98 transition-all" data-chip="cardiac" data-selected="false" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">cardiology</span>
+<span class="text-label-lg font-label-lg truncate">Cardiac</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">add_circle</span>
+</button>
+<!-- Burns (Unselected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-surface-container-low text-on-surface active:scale-98 transition-all" data-chip="burns" data-selected="false" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">local_fire_department</span>
+<span class="text-label-lg font-label-lg truncate">Burns Unit</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">add_circle</span>
+</button>
+<!-- General (Unselected) -->
+<button class="h-14 px-3 rounded-lg flex items-center justify-between bg-surface-container-low text-on-surface active:scale-98 transition-all" data-chip="general" data-selected="false" type="button">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">single_bed</span>
+<span class="text-label-lg font-label-lg truncate">General</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">add_circle</span>
+</button>
+</div>
+</section>
+<!-- Card 3: Severity Segmented Bar -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<h2 class="text-title-lg font-title-lg text-on-surface">Severity Level</h2>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container text-label-md font-label-md">High Priority</span>
+</div>
+<!-- Segmented Button Group (56dp height per button) -->
+<div class="grid grid-cols-3 gap-2 pt-1" id="severity-segmented-group">
+<!-- Critical (Selected) -->
+<button class="h-14 rounded-lg bg-error text-on-error flex flex-col items-center justify-center gap-0.5 shadow-sm active:scale-95 transition-transform" data-severity="critical" type="button">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="text-label-lg font-label-lg leading-none">Critical</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-error/90">Immediate</span>
+</button>
+<!-- Serious -->
+<button class="h-14 rounded-lg bg-surface-container-high text-on-surface flex flex-col items-center justify-center gap-0.5 active:scale-95 transition-transform" data-severity="serious" type="button">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[18px]">emergency_heat</span>
+<span class="text-label-lg font-label-lg leading-none">Serious</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Urgent</span>
+</button>
+<!-- Stable -->
+<button class="h-14 rounded-lg bg-surface-container-low text-on-surface flex flex-col items-center justify-center gap-0.5 active:scale-95 transition-transform" data-severity="stable" type="button">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="text-label-lg font-label-lg leading-none">Stable</span>
+</div>
+<span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Non-Urgent</span>
+</button>
+</div>
+</section>
+<!-- Card 4: Clinical Patient Note (Optional) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<h2 class="text-title-lg font-title-lg text-on-surface">Patient note (optional)</h2>
+<span class="text-label-md font-label-md text-on-surface-variant">Voice ready</span>
+</div>
+<div class="relative flex items-center bg-surface-container-low rounded-xl p-2 gap-2">
+<textarea class="w-full bg-transparent resize-none border-none outline-none text-body-md font-body-md text-on-surface placeholder:text-on-surface-variant/70 px-1 py-1 focus:outline-none" placeholder="e.g. 58M, chest pain, BP 80/50, on high-flow oxygen" rows="2"></textarea>
+<!-- Voice dictation trigger button (minimum 48dp) -->
+<button aria-label="Start Voice Dictation" class="w-12 h-12 shrink-0 rounded-lg bg-secondary-container hover:bg-secondary-fixed text-primary flex items-center justify-center active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[22px]">mic</span>
+</button>
+</div>
+</section>
+<!-- Sticky Bottom Dispatch Bar (72dp primary action) -->
+<div class="w-full pt-2 flex flex-col gap-2 items-center">
+<button class="w-full h-[72px] rounded-xl bg-primary-container hover:bg-primary text-on-primary shadow-md flex items-center justify-center gap-3 active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[26px]">manage_search</span>
+<div class="flex flex-col items-start leading-tight">
+<span class="text-title-lg font-title-lg text-on-primary">Find Hospitals</span>
+<span class="text-label-md font-label-md text-on-primary-container text-[12px]">Auto-matching closest ready trauma bays</span>
+</div>
+</button>
+<a class="min-h-[48px] px-4 flex items-center justify-center gap-1.5 text-primary active:opacity-75" href="#">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="text-label-lg font-label-lg">Recent dispatch requests</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<script>
+    // Micro-interactions for chip toggles and severity selector
+    document.querySelectorAll('#clinical-chips-grid button').forEach(button => {
+      button.addEventListener('click', () => {
+        const isSelected = button.getAttribute('data-selected') === 'true';
+        const iconSpan = button.querySelector('span:last-child');
+        if (isSelected) {
+          button.setAttribute('data-selected', 'false');
+          button.className = "h-14 px-3 rounded-lg flex items-center justify-between bg-surface-container-low text-on-surface active:scale-98 transition-all";
+          iconSpan.className = "material-symbols-outlined text-outline-variant text-[20px]";
+          iconSpan.textContent = "add_circle";
+        } else {
+          button.setAttribute('data-selected', 'true');
+          button.className = "h-14 px-3 rounded-lg flex items-center justify-between bg-secondary-container text-on-secondary-container shadow-sm active:scale-98 transition-all";
+          iconSpan.className = "material-symbols-outlined text-primary text-[20px] font-bold";
+          iconSpan.textContent = "check_circle";
+        }
+      });
+    });
+
+    const severityConfigs = {
+      critical: { bg: 'bg-error', text: 'text-on-error', fill: true },
+      serious: { bg: 'bg-surface-container-high', text: 'text-on-surface', fill: false },
+      stable: { bg: 'bg-surface-container-low', text: 'text-on-surface', fill: false }
+    };
+
+    document.querySelectorAll('#severity-segmented-group button').forEach(button => {
+      button.addEventListener('click', () => {
+        const currentType = button.getAttribute('data-severity');
+        document.querySelectorAll('#severity-segmented-group button').forEach(btn => {
+          btn.className = "h-14 rounded-lg bg-surface-container-low text-on-surface flex flex-col items-center justify-center gap-0.5 active:scale-95 transition-transform";
+        });
+        if (currentType === 'critical') {
+          button.className = "h-14 rounded-lg bg-error text-on-error flex flex-col items-center justify-center gap-0.5 shadow-sm active:scale-95 transition-transform";
+        } else if (currentType === 'serious') {
+          button.className = "h-14 rounded-lg bg-tertiary text-on-tertiary flex flex-col items-center justify-center gap-0.5 shadow-sm active:scale-95 transition-transform";
+        } else {
+          button.className = "h-14 rounded-lg bg-secondary text-on-secondary flex flex-col items-center justify-center gap-0.5 shadow-sm active:scale-95 transition-transform";
+        }
+      });
+    });
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-20 px-gutter"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="bed-availability" href="#"><span class="material-symbols-outlined text-[24px]">local_hospital</span><span class="text-label-md font-label-md">Beds</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] transition-colors text-primary font-bold" data-path="quick-triage" href="#"><span class="material-symbols-outlined text-[24px]">assignment_late</span><span class="text-label-md font-label-md">Triage</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="active-transports" href="#"><span class="material-symbols-outlined text-[24px]">ambulance</span><span class="text-label-md font-label-md">Transports</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="inter-facility-chat" href="#"><span class="material-symbols-outlined text-[24px]">forum</span><span class="text-label-md font-label-md">Coord</span></a></div></nav></body></html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#dff4fb", "on-secondary-container": "#2d6d78", "primary": "#00626a", "secondary-container": "#afedfa", "on-error": "#ffffff", "on-background": "#0a1e23", "inverse-surface": "#203339", "on-tertiary-container": "#e6f8fa", "on-secondary-fixed": "#001f25", "on-primary-fixed-variant": "#004f56", "surface-container-high": "#d6ecf3", "primary-fixed-dim": "#7cd4df", "secondary-fixed-dim": "#93d0dd", "error-container": "#ffdad6", "surface-variant": "#d1e6ed", "on-primary-fixed": "#001f23", "surface-container-low": "#e2f7fe", "surface-dim": "#c8dee4", "surface-tint": "#006972", "secondary": "#266772", "on-error-container": "#93000a", "on-tertiary-fixed": "#0e1e20", "error": "#ba1a1a", "tertiary-container": "#627375", "on-secondary-fixed-variant": "#004e59", "tertiary-fixed": "#d4e6e8", "background": "#f0fbff", "on-surface": "#0a1e23", "outline-variant": "#bdc9ca", "on-primary": "#ffffff", "primary-fixed": "#98f0fb", "surface": "#f0fbff", "surface-container-highest": "#d1e6ed", "outline": "#6e797a", "tertiary": "#4a5a5c", "secondary-fixed": "#afedfa", "primary-container": "#0e7c86", "surface-container": "#dcf2f8", "tertiary-fixed-dim": "#b8cacc", "on-secondary": "#ffffff", "on-primary-container": "#ddfbff", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3e494a", "surface-bright": "#f0fbff", "inverse-primary": "#7cd4df", "on-tertiary-fixed-variant": "#394a4b", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "margin": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1rem" }, fontFamily: { "headline-lg": ["Inter"], "display-lg": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Inter"], "label-lg": ["Inter"], "title-lg": ["Inter"], "display-md": ["Inter"] }, fontSize: { "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "26px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "label-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "700" }], "display-md": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen antialiased"><header class="fixed top-0 w-full z-50 bg-primary pt-safe shadow-[0_2px_8px_rgba(0,0,0,0.1)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex flex-col justify-center min-w-0 pr-space-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed text-[20px]">local_hospital</span><h1 class="font-title-lg text-title-lg text-on-primary truncate tracking-tight">City General Hospital</h1></div><p class="font-label-md text-label-md text-on-primary-container truncate opacity-90">ER Ward, Nurse Station 2</p></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ring-2 ring-primary-fixed/40"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-margin pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- Freshness Banner Card -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-lg text-label-lg text-on-surface truncate" id="update-timestamp-text">Last updated 2 min ago</span>
+<span class="font-label-md text-label-md text-on-surface-variant text-[11px] leading-tight">Live telemetry sync active</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="inline-flex items-center gap-1 bg-primary text-on-primary font-label-md text-[11px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-full shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+        FRESH
+      </span>
+</div>
+</section>
+<!-- Instructions & Micro Header -->
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">touch_app</span>
+<span>Tap + or − to adjust live count</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold" id="total-available-indicator">28 Free Beds</span>
+</div>
+<!-- 2-Column Bed Capacity Grid -->
+<div class="grid grid-cols-2 gap-space-sm w-full">
+<!-- Tile 1: ICU -->
+<article class="bed-tile relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="icu" data-max="6">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">bed</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">ICU</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-1.5 py-0.5 rounded-full font-bold bg-secondary-container/50 text-on-secondary-container">NORMAL</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-primary font-bold leading-none tracking-tight">3</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 6 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease ICU beds" class="btn-step-minus h-14 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-headline-md text-headline-md active:bg-secondary-container transition-colors touch-manipulation" type="button">
+          −
+        </button>
+<button aria-label="Increase ICU beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+<!-- Tile 2: Ventilator -->
+<article class="bed-tile relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="ventilator" data-max="8">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">air</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">Ventilator</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-1.5 py-0.5 rounded-full font-bold bg-secondary-container/50 text-on-secondary-container">NORMAL</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-primary font-bold leading-none tracking-tight">2</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 8 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease Ventilator beds" class="btn-step-minus h-14 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-headline-md text-headline-md active:bg-secondary-container transition-colors touch-manipulation" type="button">
+          −
+        </button>
+<button aria-label="Increase Ventilator beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+<!-- Tile 3: Oxygen -->
+<article class="bed-tile relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="oxygen" data-max="12">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">masks</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">Oxygen</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-1.5 py-0.5 rounded-full font-bold bg-secondary-container/50 text-on-secondary-container">OPEN</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-primary font-bold leading-none tracking-tight">8</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 12 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease Oxygen beds" class="btn-step-minus h-14 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-headline-md text-headline-md active:bg-secondary-container transition-colors touch-manipulation" type="button">
+          −
+        </button>
+<button aria-label="Increase Oxygen beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+<!-- Tile 4: Cardiac (AT CAPACITY) -->
+<article class="bed-tile relative flex flex-col justify-between bg-error-container/40 rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="cardiac" data-max="10">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-error/10 flex items-center justify-center text-error flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">monitor_heart</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">Cardiac</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-2 py-0.5 rounded-full font-bold bg-error text-on-error shadow-xs">FULL</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-error font-bold leading-none tracking-tight">0</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 10 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease Cardiac beds" class="btn-step-minus h-14 rounded-lg bg-surface-container/60 opacity-30 cursor-not-allowed flex items-center justify-center text-on-surface font-headline-md text-headline-md" disabled="" type="button">
+          −
+        </button>
+<button aria-label="Increase Cardiac beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+<!-- Tile 5: Burns (LOW CAPACITY) -->
+<article class="bed-tile relative flex flex-col justify-between bg-secondary-container/30 rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="burns" data-max="4">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-secondary/15 flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">Burns</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-2 py-0.5 rounded-full font-bold bg-secondary text-on-secondary shadow-xs">LOW</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-secondary font-bold leading-none tracking-tight">1</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 4 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease Burns beds" class="btn-step-minus h-14 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-headline-md text-headline-md active:bg-secondary-container transition-colors touch-manipulation" type="button">
+          −
+        </button>
+<button aria-label="Increase Burns beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+<!-- Tile 6: General -->
+<article class="bed-tile relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-sm transition-all duration-150" data-bed-type="general" data-max="20">
+<div class="flex items-center justify-between w-full">
+<div class="flex items-center gap-1.5 min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">single_bed</span>
+</div>
+<span class="font-title-lg text-title-lg text-on-surface truncate">General</span>
+</div>
+<span class="status-chip text-[11px] font-label-md uppercase px-1.5 py-0.5 rounded-full font-bold bg-secondary-container/50 text-on-secondary-container">OPEN</span>
+</div>
+<div class="flex flex-col items-center justify-center my-1.5">
+<span class="bed-count font-display-md text-display-md text-primary font-bold leading-none tracking-tight">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1">of 20 total</span>
+</div>
+<div class="grid grid-cols-2 gap-2 w-full pt-1">
+<button aria-label="Decrease General beds" class="btn-step-minus h-14 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-headline-md text-headline-md active:bg-secondary-container transition-colors touch-manipulation" type="button">
+          −
+        </button>
+<button aria-label="Increase General beds" class="btn-step-plus h-14 rounded-lg bg-primary-container text-on-primary font-headline-md text-headline-md active:bg-primary transition-colors touch-manipulation" type="button">
+          +
+        </button>
+</div>
+</article>
+</div>
+<!-- ER Surge Load Selector Section -->
+<section class="flex flex-col space-y-2 w-full bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-lg text-label-lg text-on-surface">Emergency room load</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Triage intake status</span>
+</div>
+<div aria-label="Emergency room load" class="grid grid-cols-3 gap-2 w-full" id="er-load-group" role="radiogroup">
+<!-- Low Chip (Selected) -->
+<button aria-checked="true" class="er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-primary text-on-primary font-title-lg text-title-lg shadow-sm transition-all duration-150" data-load="low" role="radio" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Low</span>
+</button>
+<!-- Medium Chip -->
+<button aria-checked="false" class="er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-surface-container-low text-on-surface-variant font-title-lg text-title-lg active:bg-surface-container transition-all duration-150" data-load="medium" role="radio" type="button">
+<span class="material-symbols-outlined text-[20px] opacity-70">speed</span>
+<span>Medium</span>
+</button>
+<!-- High Chip -->
+<button aria-checked="false" class="er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-surface-container-low text-on-surface-variant font-title-lg text-title-lg active:bg-surface-container transition-all duration-150" data-load="high" role="radio" type="button">
+<span class="material-symbols-outlined text-[20px] opacity-70">warning</span>
+<span>High</span>
+</button>
+</div>
+</section>
+<!-- Secondary & Primary Handover / Sync Actions -->
+<div class="flex flex-col space-y-space-xs w-full pt-1">
+<!-- Secondary Manual Broadcast Button -->
+<button class="h-12 w-full rounded-xl bg-surface-container-high/60 text-on-surface-variant opacity-50 cursor-not-allowed font-title-lg text-label-lg flex items-center justify-center gap-2 transition-all" disabled="" id="save-update-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Stage Bed Audit Log</span>
+</button>
+<!-- Primary Quick Reassurance Action -->
+<button class="h-18 min-h-[68px] w-full rounded-2xl bg-primary-container text-on-primary font-title-lg text-title-lg shadow-md active:bg-primary flex items-center justify-center gap-3 transition-transform active:scale-[0.99] touch-manipulation" id="confirm-all-btn" type="button">
+<span class="material-symbols-outlined text-[26px]">verified</span>
+<span>Everything is up to date</span>
+</button>
+</div>
+<!-- Interactive Logic Hook -->
+<script>
+    (function initBedUpdater() {
+      const tiles = document.querySelectorAll('.bed-tile');
+      const erChips = document.querySelectorAll('.er-chip');
+      const saveBtn = document.getElementById('save-update-btn');
+      const confirmBtn = document.getElementById('confirm-all-btn');
+      const timestampText = document.getElementById('update-timestamp-text');
+      const totalIndicator = document.getElementById('total-available-indicator');
+
+      let hasUnsavedChanges = false;
+
+      function updateTotalCount() {
+        let total = 0;
+        document.querySelectorAll('.bed-count').forEach(el => {
+          total += parseInt(el.textContent, 10) || 0;
+        });
+        if (totalIndicator) {
+          totalIndicator.textContent = `${total} Free Beds`;
+        }
+      }
+
+      function markDirty() {
+        hasUnsavedChanges = true;
+        saveBtn.disabled = false;
+        saveBtn.classList.remove('opacity-50', 'cursor-not-allowed', 'bg-surface-container-high/60');
+        saveBtn.classList.add('bg-surface-container-highest', 'text-on-surface', 'shadow-xs');
+        saveBtn.querySelector('span:last-child').textContent = 'Commit Changes to Ambulance Grid';
+      }
+
+      tiles.forEach(tile => {
+        const minusBtn = tile.querySelector('.btn-step-minus');
+        const plusBtn = tile.querySelector('.btn-step-plus');
+        const countSpan = tile.querySelector('.bed-count');
+        const chip = tile.querySelector('.status-chip');
+        const max = parseInt(tile.getAttribute('data-max'), 10) || 10;
+
+        function refreshTileState(val) {
+          countSpan.textContent = val;
+
+          // Toggle minus state
+          if (val <= 0) {
+            minusBtn.disabled = true;
+            minusBtn.classList.add('opacity-30', 'cursor-not-allowed');
+            minusBtn.classList.remove('active:bg-secondary-container');
+          } else {
+            minusBtn.disabled = false;
+            minusBtn.classList.remove('opacity-30', 'cursor-not-allowed');
+            minusBtn.classList.add('active:bg-secondary-container');
+          }
+
+          // Toggle plus state
+          if (val >= max) {
+            plusBtn.disabled = true;
+            plusBtn.classList.add('opacity-30', 'cursor-not-allowed');
+          } else {
+            plusBtn.disabled = false;
+            plusBtn.classList.remove('opacity-30', 'cursor-not-allowed');
+          }
+
+          // Visual urgency themes
+          if (val === 0) {
+            tile.className = 'bed-tile relative flex flex-col justify-between bg-error-container/40 rounded-xl p-3 shadow-sm transition-all duration-150';
+            countSpan.className = 'bed-count font-display-md text-display-md text-error font-bold leading-none tracking-tight';
+            chip.className = 'status-chip text-[11px] font-label-md uppercase px-2 py-0.5 rounded-full font-bold bg-error text-on-error shadow-xs';
+            chip.textContent = 'FULL';
+          } else if (val <= 1) {
+            tile.className = 'bed-tile relative flex flex-col justify-between bg-secondary-container/30 rounded-xl p-3 shadow-sm transition-all duration-150';
+            countSpan.className = 'bed-count font-display-md text-display-md text-secondary font-bold leading-none tracking-tight';
+            chip.className = 'status-chip text-[11px] font-label-md uppercase px-2 py-0.5 rounded-full font-bold bg-secondary text-on-secondary shadow-xs';
+            chip.textContent = 'LOW';
+          } else {
+            tile.className = 'bed-tile relative flex flex-col justify-between bg-surface-container-lowest rounded-xl p-3 shadow-sm transition-all duration-150';
+            countSpan.className = 'bed-count font-display-md text-display-md text-primary font-bold leading-none tracking-tight';
+            chip.className = 'status-chip text-[11px] font-label-md uppercase px-1.5 py-0.5 rounded-full font-bold bg-secondary-container/50 text-on-secondary-container';
+            chip.textContent = 'OPEN';
+          }
+
+          updateTotalCount();
+        }
+
+        minusBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          let current = parseInt(countSpan.textContent, 10);
+          if (current > 0) {
+            refreshTileState(current - 1);
+            markDirty();
+          }
+        });
+
+        plusBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          let current = parseInt(countSpan.textContent, 10);
+          if (current < max) {
+            refreshTileState(current + 1);
+            markDirty();
+          }
+        });
+      });
+
+      // Segmented ER Load Radio Selector
+      erChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          erChips.forEach(c => {
+            c.setAttribute('aria-checked', 'false');
+            c.className = 'er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-surface-container-low text-on-surface-variant font-title-lg text-title-lg active:bg-surface-container transition-all duration-150';
+            const icon = c.querySelector('.material-symbols-outlined');
+            if (icon) icon.className = 'material-symbols-outlined text-[20px] opacity-70';
+          });
+
+          chip.setAttribute('aria-checked', 'true');
+          const loadType = chip.getAttribute('data-load');
+          if (loadType === 'high') {
+            chip.className = 'er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-error text-on-error font-title-lg text-title-lg shadow-sm transition-all duration-150';
+          } else if (loadType === 'medium') {
+            chip.className = 'er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-secondary text-on-secondary font-title-lg text-title-lg shadow-sm transition-all duration-150';
+          } else {
+            chip.className = 'er-chip h-14 rounded-xl flex items-center justify-center gap-1.5 px-2 bg-primary text-on-primary font-title-lg text-title-lg shadow-sm transition-all duration-150';
+          }
+          const activeIcon = chip.querySelector('.material-symbols-outlined');
+          if (activeIcon) activeIcon.className = 'material-symbols-outlined text-[20px]';
+
+          markDirty();
+        });
+      });
+
+      function flashSuccessFeedback(button, originalText, successText) {
+        button.innerHTML = `<span class="material-symbols-outlined text-[22px]">check</span><span>${successText}</span>`;
+        button.classList.add('bg-primary');
+        timestampText.textContent = 'Last updated just now';
+
+        setTimeout(() => {
+          button.innerHTML = originalText;
+          button.classList.remove('bg-primary');
+          hasUnsavedChanges = false;
+          saveBtn.disabled = true;
+          saveBtn.className = 'h-12 w-full rounded-xl bg-surface-container-high/60 text-on-surface-variant opacity-50 cursor-not-allowed font-title-lg text-label-lg flex items-center justify-center gap-2 transition-all';
+          saveBtn.querySelector('span:last-child').textContent = 'Stage Bed Audit Log';
+        }, 1800);
+      }
+
+      confirmBtn.addEventListener('click', () => {
+        flashSuccessFeedback(confirmBtn, `<span class="material-symbols-outlined text-[26px]">verified</span><span>Everything is up to date</span>`, 'Verified & Synced!');
+      });
+
+      saveBtn.addEventListener('click', () => {
+        if (!saveBtn.disabled) {
+          flashSuccessFeedback(saveBtn, `<span class="material-symbols-outlined text-[18px]">cloud_sync</span><span>Stage Bed Audit Log</span>`, 'Dispatched to Dispatch En Route');
+        }
+      });
+
+      updateTotalCount();
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(10,30,35,0.08)]" data-active-classes="text-primary font-bold bg-secondary-container/40"><div class="grid grid-cols-2 items-center h-20 px-space-sm gap-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center h-14 rounded-xl transition-colors text-primary font-bold bg-secondary-container/40" data-path="bed-inventory" href="#"><span class="material-symbols-outlined text-[26px]">bed</span><span class="font-label-md text-label-md mt-space-xs">Beds</span></a><a class="relative flex flex-col items-center justify-center h-14 rounded-xl text-on-surface-variant hover:text-on-surface transition-colors" data-path="incoming-requests" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[26px]">notifications</span><span class="absolute -top-1 -right-2 min-w-[20px] h-[20px] px-1 bg-error text-on-error font-label-md text-[11px] leading-[20px] text-center rounded-full font-bold shadow-sm">1</span></div><span class="font-label-md text-label-md mt-space-xs">Requests</span></a></div></nav></body></html>
