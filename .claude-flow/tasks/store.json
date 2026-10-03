@@ -38,6 +38,45 @@
       "createdAt": "2026-10-02T23:39:11.868Z",
       "startedAt": null,
       "completedAt": null
+    },
+    "task-1790985244077-2lnwhd": {
+      "taskId": "task-1790985244077-2lnwhd",
+      "type": "implementation",
+      "description": "Implement dynamic data freshness decay scoring and relative time badging in Dispatch View.",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T23:54:04.077Z",
+      "startedAt": null,
+      "completedAt": null
+    },
+    "task-1790985248331-ce4eox": {
+      "taskId": "task-1790985248331-ce4eox",
+      "type": "implementation",
+      "description": "Add demo preset switcher for judge presentations (Simulate Reject, Timeout Cascade, and Stale Data).",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T23:54:08.331Z",
+      "startedAt": null,
+      "completedAt": null
+    },
+    "task-1790985368484-mkuswa": {
+      "taskId": "task-1790985368484-mkuswa",
+      "type": "implementation",
+      "description": "Implement Demo Preset Switcher and 375px cheap phone view wrapper for judge presentation.",
+      "priority": "normal",
+      "status": "pending",
+      "progress": 0,
+      "assignedTo": [],
+      "tags": [],
+      "createdAt": "2026-10-02T23:56:08.484Z",
+      "startedAt": null,
+      "completedAt": null
     }
   },
   "version": "3.0.0"
